@@ -13,3 +13,6 @@ git config --global alias.r2 'reset HEAD^^'
 git config --global alias.rh 'reset --hard'
 git config --global alias.rh1 'reset HEAD^ --hard'
 git config --global alias.rh2 'reset HEAD^^ --hard'
+
+git config --global alias.lf 'log --follow'
+git config --global alias.lg 'log --graph'
