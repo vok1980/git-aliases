@@ -22,3 +22,6 @@ git config --global alias.rh2 'reset HEAD^^ --hard'
 
 git config --global alias.lf 'log --follow'
 git config --global alias.lg 'log --graph'
+
+git config --global merge.tool vimdiff
+
