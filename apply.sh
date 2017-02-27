@@ -13,6 +13,8 @@ git config --global alias.k '!gitk'
 git config --global alias.up '!git submodule sync --recursive && git submodule update --init --recursive --checkout'
 git config --global alias.pullup '!git pull && git up'
 
+git config --global alias.bf '!git checkout -b $1 && git push -u origin '
+
 git config --global alias.r 'reset'
 git config --global alias.r1 'reset HEAD^'
 git config --global alias.r2 'reset HEAD^^'
