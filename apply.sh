@@ -24,4 +24,5 @@ git config --global alias.lf 'log --follow'
 git config --global alias.lg 'log --graph'
 
 git config --global merge.tool vimdiff
+git config --global diff.tool vimdiff
 
