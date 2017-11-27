@@ -14,6 +14,7 @@ git config --global alias.up '!git submodule sync --recursive && git submodule u
 git config --global alias.pullup '!git pull && git up'
 
 git config --global alias.bf '!git checkout -b $1 && git push -u origin '
+git config --global alias.urri 'submodule update --recursive --rebase --init'
 
 git config --global alias.r 'reset'
 git config --global alias.r1 'reset HEAD^'
