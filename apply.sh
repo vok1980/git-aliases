@@ -13,6 +13,7 @@ git config --global alias.k '!gitk'
 git config --global alias.up '!git submodule sync --recursive && git submodule update --init --recursive --checkout'
 git config --global alias.pullup '!git pull && git up'
 
+
 git config --global alias.bf '!git checkout -b $1 && git push -u origin '
 git config --global alias.urri 'submodule update --recursive --rebase --init'
 
@@ -28,4 +29,5 @@ git config --global alias.lg 'log --graph --full-history --color --date=short --
 
 git config --global merge.tool vimdiff
 git config --global diff.tool vimdiff
+git config --global core.editor vim
 
