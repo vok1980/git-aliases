@@ -17,10 +17,8 @@ sudo apt install \
 	sublime-text \
 	clang \
 	clang-format \
-	llvm-ar \
+	llvm \
 
-	
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "Don't forget to fix \"domain-name=.alocal\" in \"/etc/avahi/avahi-daemon.conf\""
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-
+AVAHI_CONF=/etc/avahi/avahi-daemon.conf
+sudo cp -i ${AVAHI_CONF} ${AVAHI_CONF}.bak
+sudo sed -i -E 's/^.*domain-name=.+$/domain-name=\.alocal/g' ${AVAHI_CONF}
