@@ -19,6 +19,7 @@ sudo apt install \
 	clang-format \
 	llvm \
 	remmina \
+	xclip \
 
 AVAHI_CONF=/etc/avahi/avahi-daemon.conf
 sudo cp -i ${AVAHI_CONF} ${AVAHI_CONF}.bak
