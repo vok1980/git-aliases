@@ -21,6 +21,7 @@ sudo apt install \
 	remmina \
 	xclip \
 	openssh-server \
+	libreoffice \
 
 AVAHI_CONF=/etc/avahi/avahi-daemon.conf
 sudo cp -i ${AVAHI_CONF} ${AVAHI_CONF}.bak
