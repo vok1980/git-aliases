@@ -22,6 +22,7 @@ sudo apt install \
 	libreoffice \
 	ack \
 	mc \
+	htop \
 
 AVAHI_CONF=/etc/avahi/avahi-daemon.conf
 sudo cp -i ${AVAHI_CONF} ${AVAHI_CONF}.bak
