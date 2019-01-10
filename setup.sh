@@ -27,9 +27,11 @@ sudo apt install \
 AVAHI_CONF=/etc/avahi/avahi-daemon.conf
 sudo cp -i ${AVAHI_CONF} ${AVAHI_CONF}.bak
 sudo sed -i -E 's/^.*domain-name=.+$/domain-name=\.alocal/g' ${AVAHI_CONF}
+sudo service avahi-daemon restart
 
 SSHD_CONFIG=/etc/ssh/sshd_config
 sudo cp -i ${SSHD_CONFIG} ${SSHD_CONFIG}.bak
 sudo sed -i -E 's/^.*PubkeyAuthentication.+$/PubkeyAuthentication yes/g' ${SSHD_CONFIG}
 sudo sed -i -E 's/^.*PasswordAuthentication.+$/PasswordAuthentication no/g' ${SSHD_CONFIG}
 sudo service ssh restart
+
