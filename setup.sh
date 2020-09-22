@@ -24,6 +24,8 @@ sudo apt install \
 	mc \
 	htop \
 
+sudo snap install code --classic
+
 AVAHI_CONF=/etc/avahi/avahi-daemon.conf
 sudo cp -i ${AVAHI_CONF} ${AVAHI_CONF}.bak
 sudo sed -i -E 's/^.*domain-name=.+$/domain-name=\.alocal/g' ${AVAHI_CONF}
