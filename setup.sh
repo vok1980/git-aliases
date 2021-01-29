@@ -20,6 +20,7 @@ sudo apt install \
 	xclip \
 	openssh-server \
 	libreoffice \
+	imagemagick \
 	ack \
 	mc \
 	htop \
