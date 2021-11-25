@@ -10,7 +10,6 @@ sudo apt install \
 	git \
 	git-cola \
 	thunderbird \
-	chromium-browser \
 	cmake \
 	sublime-text \
 	clang \
