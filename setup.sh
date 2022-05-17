@@ -30,7 +30,6 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable
 
 sudo snap install code --classic
-sudo snap install slack --classic
 sudo snap install discord --classic
 sudo snap install android-studio --classic
 sudo snap install telegram-desktop
