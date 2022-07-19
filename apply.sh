@@ -36,3 +36,4 @@ git config --global merge.tool vimdiff
 git config --global diff.tool vimdiff
 git config --global core.editor vim
 
+git config --global --replace-all pull.ff only
