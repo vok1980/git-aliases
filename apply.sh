@@ -18,6 +18,7 @@ git config --global alias.pullupc '!git pull && git upc'
 
 git config --global alias.bf '!git checkout -b $1 && git push -u origin '
 git config --global alias.urri 'submodule update --recursive --rebase'
+git config --global alias.csr '!git checkout $1 && git submodule foreach --recursive "git checkout $1 || echo Not found $1 branch"'
 
 git config --global alias.r 'reset'
 git config --global alias.r1 'reset HEAD^'
