@@ -23,6 +23,7 @@ sudo snap install code --classic
 sudo snap install discord --classic
 sudo snap install android-studio --classic
 sudo snap install telegram-desktop
+sudo snap install mattermost-desktop --beta
 
 AVAHI_CONF=/etc/avahi/avahi-daemon.conf
 sudo cp -i ${AVAHI_CONF} ${AVAHI_CONF}.bak
