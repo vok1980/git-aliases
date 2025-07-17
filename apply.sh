@@ -38,3 +38,6 @@ git config --global diff.tool vimdiff
 git config --global core.editor vim
 
 git config --global --replace-all pull.ff only
+
+git config --global alias.for-each-ref-origin '!git for-each-ref --format="%(refname:short)" "refs/remotes/origin/$1"'
+git config --global alias.for-each-ref-local '!git for-each-ref --format="%(refname:short)" "refs/heads/$1"'
